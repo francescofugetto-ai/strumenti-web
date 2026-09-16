@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strumenti</title>
+<meta name="description" content="Strumenti di consultazione per la cardiologia clinica, ciascuno al suo indirizzo.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+  :root {
+    --bg:#FAF9F7; --surface:#FFFFFF; --surface-alt:#F3F2EF;
+    --border:rgba(11,11,11,.10); --border-strong:rgba(11,11,11,.18);
+    --text-primary:#0B0B0B; --text-secondary:#52514E; --text-muted:#76746F;
+    --blue:#2A78D6; --grid:rgba(42,120,214,.08);
+    --font:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    --display:'IBM Plex Sans Condensed','Arial Narrow',-apple-system,'Segoe UI',sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#111418; --surface:#181C22; --surface-alt:#20252D; --border:rgba(255,255,255,.10);
+      --border-strong:rgba(255,255,255,.19); --text-primary:#E7EAEE; --text-secondary:#B8BEC7; --text-muted:#949BA5;
+      --blue:#72AAEE; --grid:rgba(114,170,238,.07); color-scheme:dark; }
+  }
+  body { font-family:var(--font); background:var(--bg); color:var(--text-primary); font-size:15px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  .page { max-width:920px; margin:0 auto; padding:0 16px 3rem; }
+  .hero { margin:0 -16px 1.4rem; padding:2.6rem 16px 1.6rem; border-bottom:1px solid var(--border);
+          background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px); background-size:22px 22px; }
+  .kicker { font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--blue); margin-bottom:8px; }
+  h1 { font-family:var(--display); font-size:38px; font-weight:700; line-height:1.05; margin-bottom:10px; }
+  .lede { color:var(--text-secondary); max-width:700px; }
+  h2 { font-family:var(--mono); font-size:11.5px; font-weight:600; letter-spacing:.07em; text-transform:uppercase; color:var(--text-muted); margin:1.8rem 0 .6rem; }
+  .griglia { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:12px; }
+  a.t { display:flex; gap:12px; align-items:flex-start; background:var(--surface); border:1px solid var(--border-strong); border-radius:14px; padding:14px; color:inherit; text-decoration:none; }
+  a.t:hover { border-color:var(--blue); }
+  a.t img { width:52px; height:52px; border-radius:12px; flex:0 0 auto; background:var(--surface-alt); }
+  a.t b { display:block; font-family:var(--display); font-size:19px; line-height:1.2; }
+  a.t span { display:block; font-size:13.5px; color:var(--text-secondary); margin-top:3px; }
+  a.t small { display:block; font-family:var(--mono); font-size:11px; color:var(--text-muted); margin-top:6px; overflow-wrap:anywhere; }
+  .nota { margin-top:2.2rem; padding-top:1rem; border-top:1px solid var(--border-strong); font-size:12.5px; color:var(--text-muted); }
+  .nota p { margin-bottom:.5rem; }
+  @media (max-width:520px) { h1 { font-size:30px; } }
+</style>
+</head>
+<body>
+<div class="page">
+<header class="hero">
+  <div class="kicker">Cardiologia clinica · strumenti di consultazione</div>
+  <h1>Strumenti</h1>
+  <p class="lede">Ogni strumento ha il suo indirizzo e funziona da solo. Sull'iPhone si apre in Safari e si aggiunge alla schermata Home; dopo la prima apertura funziona anche senza rete.</p>
+</header>
+<h2>Terapia intensiva cardiologica</h2>
+<div class="griglia">
+<a class="t" href="https://francescofugetto-ai.github.io/prontuario-infusioni-web/"><img src="https://francescofugetto-ai.github.io/prontuario-infusioni-web/icona-192.png" alt="" width="52" height="52" loading="lazy"><div><b>Prontuario delle infusioni in UTIC</b><span>Le infusioni della terapia intensiva cardiologica, adulto e pediatrico: preparazione, dose e velocità in mL/h per il peso, con i nomogrammi dell&#x27;eparina e l&#x27;aggiustamento renale.</span><small>francescofugetto-ai.github.io/prontuario-infusioni-web/</small></div></a>
+<a class="t" href="https://francescofugetto-ai.github.io/prontuario-shock-web/"><img src="https://francescofugetto-ai.github.io/prontuario-shock-web/icona-192.png" alt="" width="52" height="52" loading="lazy"><div><b>Shock UTIC</b><span>Le infusioni nello shock: preparazione, dose e velocità in mL/h per il peso, filtrabili per quadrante clinico.</span><small>francescofugetto-ai.github.io/prontuario-shock-web/</small></div></a>
+<a class="t" href="https://francescofugetto-ai.github.io/scheda-azione-shock-web/"><img src="https://francescofugetto-ai.github.io/scheda-azione-shock-web/icona-192.png" alt="" width="52" height="52" loading="lazy"><div><b>Azione shock</b><span>Lo shock in UTIC dal quadrante alla terapia, in ordine di tempo, con le dosi già in mL/h per il peso.</span><small>francescofugetto-ai.github.io/scheda-azione-shock-web/</small></div></a>
+</div>
+<h2>Linee guida · cardiologia dell&#x27;adulto</h2>
+<div class="griglia">
+<a class="t" href="https://francescofugetto-ai.github.io/tool-ep-web/"><img src="https://francescofugetto-ai.github.io/tool-ep-web/icona-192.png" alt="" width="52" height="52" loading="lazy"><div><b>Tool EP</b><span>Embolia polmonare acuta: dalla gravità alla destinazione e alla terapia, con il rene, secondo AHA/ACC 2026 o ESC 2019.</span><small>francescofugetto-ai.github.io/tool-ep-web/</small></div></a>
+<a class="t" href="https://francescofugetto-ai.github.io/tool-rfcl-web/"><img src="https://francescofugetto-ai.github.io/tool-rfcl-web/icona-192.png" alt="" width="52" height="52" loading="lazy"><div><b>Tool RF-CL</b><span>Sindrome coronarica cronica: probabilità clinica di CAD ostruttiva col modello RF-CL, riclassificazione col calcium score e primo test, secondo ESC 2024.</span><small>francescofugetto-ai.github.io/tool-rfcl-web/</small></div></a>
+</div>
+<h2>Ecocardiografia</h2>
+<div class="griglia">
+<a class="t" href="https://francescofugetto-ai.github.io/eco-tte-web/"><img src="https://francescofugetto-ai.github.io/eco-tte-web/icona-192.png" alt="" width="52" height="52" loading="lazy"><div><b>Eco TTE</b><span>Scheda di misura e refertazione dell&#x27;ecocardiogramma transtoracico dell&#x27;adulto.</span><small>francescofugetto-ai.github.io/eco-tte-web/</small></div></a>
+<a class="t" href="https://francescofugetto-ai.github.io/eco-tte-pediatrico-web/"><img src="https://francescofugetto-ai.github.io/eco-tte-pediatrico-web/icona-192.png" alt="" width="52" height="52" loading="lazy"><div><b>Eco TTE ped</b><span>Scheda di misura e refertazione dell&#x27;ecocardiogramma transtoracico pediatrico, con z-score.</span><small>francescofugetto-ai.github.io/eco-tte-pediatrico-web/</small></div></a>
+</div>
+<div class="nota">
+  <p><strong>Materiale di consultazione.</strong> Non sostituisce il giudizio clinico, i protocolli di reparto né la lettura delle linee guida; chi usa uno strumento ne verifica i risultati. Nessuno di questi strumenti è un dispositivo medico validato.</p>
+  <p>Creati dal dott. Francesco Fugetto.</p>
+</div>
+</div>
+</body>
+</html>
